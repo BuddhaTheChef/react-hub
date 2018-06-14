@@ -11,9 +11,11 @@ const VideoList = (props) => {
     )
   });
   return (
-    <ul>
+    <div className="side-bar-list">
+    <ul className="sidebar-ul">
       {videoItems}
     </ul>
+    </div>
   )
 }
 

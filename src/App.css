@@ -2,4 +2,89 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 20px;
+}
+
+.search-bar-main input {
+  width: 55%;
+  height: 30px;
+  font-size: 20px;
+}
+
+.video-item img {
+  max-width: 64px;
+}
+
+.video-detail {
+  width: 60%;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.video-display {
+  width: 100%;
+  height: 600px;
+}
+
+.video-detail .details {
+  width: 92%;
+  margin-top: 0px;
+  padding: 38px;
+  border: solid 3px #ddd;
+  border-radius: 4px;
+}
+
+.video-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.video-description {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* ///////////////////////////////////////////// */
+/* Side Bar */
+/* ///////////////////////////////////////////// */
+
+.side-bar-list {
+  display: inline-block;
+  width: 31%;
+  margin-left: -20px;
+}
+
+.sidebar-ul {
+  list-style-type: none;
+}
+
+.list-group-item {
+  cursor: pointer;
+  margin: 18px 0px 0px 0px;
+  width: 100%;
+}
+
+.list-group-item:hover {
+  background-color: #eee;
+}
+
+.outer-list-border{
+  border: solid #ddd 2px;
+  border-radius: 4px;
+  padding: 0px;
+}
+
+.inner-list-div {
+  display: flex;
+  padding: 7px;
+align-items: center;
+}
+
+.sidebar-list-title {
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: bold;
 }
