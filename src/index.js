@@ -4,9 +4,11 @@ import YTSearch from 'youtube-api-search';
 import './App.css'
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail'
 
 //////////////////////////////////////////////////////////
 // PUT API KEY HERE BEFORE CONTINUING v
+
 
 //////////////////////////////////////////////////////////
 class App extends Component {
@@ -14,17 +16,25 @@ class App extends Component {
     super(props);
 
     this.state = {
-      videos: []
+      videos: [],
+      selectedVideo: null
     }
     YTSearch({key: API_KEY, term: 'skateboards'}, (videos) => {
-      this.setState({ videos })
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+       })
     })
   }
   render() {
     return (
       <div>
         <SearchBar/>
-        <VideoList videos={this.state.videos} />
+        <VideoDetail video={this.state.selectedVideo}/>
+        <VideoList
+          onVideoSelect={ selectedVideo => this.setState({selectedVideo}) }
+          videos={this.state.videos}
+         />
       </div>
     )
   }
