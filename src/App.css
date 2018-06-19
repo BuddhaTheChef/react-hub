@@ -5,7 +5,8 @@ html {
   position: absolute;
   left: 5%;
   top: -2px;
-  background-color: green;
+  background-color: rgb(208, 175, 175);
+  border: solid black 1px;
   border-radius: 20px;
   padding: 5px 20px 5px 20px;
   font-size: 50px;
@@ -49,11 +50,10 @@ html {
 
 .video-detail .details {
   background-color: whitesmoke;
-  border: solid 1px black;
   width: 92%;
   margin-top: 10px;
   padding: 38px;
-  border: solid 3px #ddd;
+  border: solid 1px black;
   border-radius: 4px;
   box-shadow: 0 8px 34px 4px rgba(0,0,0,.4);
 }
@@ -115,3 +115,5 @@ align-items: center;
   font-size: 17px;
   font-weight: bold;
 }
+
+/* const API_KEY = 'AIzaSyB39-WT-aK1qbMVoccVQozuOjBZ3YpiYRU'; */
