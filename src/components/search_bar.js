@@ -11,9 +11,10 @@ class SearchBar extends Component {
   render() {
     return (
       <div>
-        <h1 className="main-title">YouTube</h1>
+        <h1 className="main-title">Insta<span className="title-vid">Vid</span></h1>
       <div className="search-bar-main">
         <input
+          placeholder="simple and quick..."
           value={this.state.term}
           onChange={ event => this.onInputChange(event.target.value)} />
       </div>
